@@ -1,4 +1,6 @@
 import React, { lazy, Suspense, useContext, useEffect } from 'react';
+
+// 应用主入口，配置路由并懒加载各页面组件
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Loading from './components/Loading';
 import User from './pages/User';

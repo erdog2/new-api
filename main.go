@@ -1,5 +1,7 @@
 package main
 
+// main.go 是后端的入口文件，负责初始化数据库、缓存和 HTTP 服务
+
 import (
 	"embed"
 	"fmt"

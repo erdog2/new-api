@@ -1,4 +1,6 @@
 import React, { useEffect, useState, useContext } from 'react';
+
+// FooterBar 用于渲染页面底部信息和自定义版权内容
 import { useTranslation } from 'react-i18next';
 import { getFooterHTML, getSystemName } from '../helpers';
 import { Layout, Tooltip } from '@douyinfe/semi-ui';
