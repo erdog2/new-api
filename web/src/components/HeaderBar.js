@@ -1,4 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
+
+// HeaderBar 负责渲染页面顶部导航，包括主题切换、语言选择等交互逻辑
 import { Link, useNavigate } from 'react-router-dom';
 import { UserContext } from '../context/User';
 import { useSetTheme, useTheme } from '../context/Theme';
@@ -40,13 +42,16 @@ import Text from '@douyinfe/semi-ui/lib/es/typography/text';
 import { StyleContext } from '../context/Style/index.js';
 import { StatusContext } from '../context/Status/index.js';
 
-// 自定义顶部栏样式
+// 自定义顶部栏样式，添加 sticky 效果让导航栏在滚动时保持可见
 const headerStyle = {
   boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
   borderBottom: '1px solid var(--semi-color-border)',
   background: 'var(--semi-color-bg-0)',
   transition: 'all 0.3s ease',
   width: '100%',
+  position: 'sticky',
+  top: 0,
+  zIndex: 1000,
 };
 
 // 自定义顶部栏按钮样式

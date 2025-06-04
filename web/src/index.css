@@ -257,6 +257,11 @@ code {
 /* 顶部栏样式 */
 .topnav {
   padding: 0 16px;
+  /* 让顶部导航在页面滚动时保持固定 */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: var(--semi-color-bg-0);
 }
 
 .topnav .semi-navigation-item {
